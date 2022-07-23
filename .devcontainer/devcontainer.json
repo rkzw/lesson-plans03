@@ -1,0 +1,16 @@
+un// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.231.6/containers/sfdx-project
+{
+    "name": "Salesforce Project (Community)",
+    "extensions": [
+		"salesforce.salesforcedx-vscode",
+		"redhat.vscode-xml",
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode"
+	],
+    "settings": {
+		"salesforcedx-vscode-apex.java.home": "/usr/lib/jvm/java-1.11.0-openjdk-amd64"
+		// "salesforcedx-vscode-apex.java.home": "/home/rkzw20/.asdf/installs/java/zulu-11.54.25"
+	},
+	"dockerFile": "Dockerfile"
+}
