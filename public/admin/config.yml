@@ -1,7 +1,12 @@
 backend:
   # name: test-repo
-  name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
+  # name: git-gateway
+  # branch: main # Branch to update (optional; defaults to master)
+  name: github
+  repo: rkzw/lesson-plans03
+  branch: main
+  base_url: "https://lesson-plans03.vercel.app"
+  auth_endpoint: "api/auth" # used together with base_url for our custom endpoints
 media_folder: public/img
 public_folder: img
 collections:
