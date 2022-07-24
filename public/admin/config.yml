@@ -1,9 +1,8 @@
 backend:
   # name: test-repo
-  # name: git-gateway
-  # branch: main # Branch to update (optional; defaults to master)
-  name: github
-  repo: rkzw/lesson-plans03
+  name: git-gateway
+  # name: github
+  # repo: rkzw/lesson-plans03
   branch: main
   base_url: "https://lesson-plans.netlify.app/"
   auth_endpoint: "api/auth" # used together with base_url for our custom endpoints
