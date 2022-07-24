@@ -9,17 +9,6 @@ export default class Home extends Component {
       <>
         <Head>
           <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-          <script>
-            if (window.netlifyIdentity) {
-              window.netlifyIdentity.on("init", user => {
-                if (!user) {
-                  window.netlifyIdentity.on("login", () => {
-                    document.location.href = "/admin/";
-                  });
-                }
-              });
-            }
-        </script>
         </Head>
         <article>
           <h1>{title}</h1>
@@ -33,6 +22,17 @@ export default class Home extends Component {
             ))}
           </ul>
         </article>
+        <script>
+            if (window.netlifyIdentity) {
+              window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                  window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                  });
+                }
+              });
+            }
+        </script>
       </>
     )
   }

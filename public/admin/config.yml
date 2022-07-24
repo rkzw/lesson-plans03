@@ -6,6 +6,8 @@ backend:
   branch: main
   base_url: "https://lesson-plans.netlify.app/"
   auth_endpoint: "api/auth" # used together with base_url for our custom endpoints
+locale: "ja"
+local_backend: true
 media_folder: public/img
 public_folder: img
 collections:
