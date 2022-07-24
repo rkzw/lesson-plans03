@@ -6,6 +6,7 @@ backend:
   branch: main
   base_url: "https://lesson-plans.netlify.app/"
   auth_endpoint: "api/auth" # used together with base_url for our custom endpoints
+publish_mode: editorial_workflow
 locale: "ja"
 local_backend: true
 media_folder: public/img
@@ -13,6 +14,9 @@ public_folder: img
 collections:
   - name: "pages"
     label: "Pages"
+    folder: "content/articles/"
+    create: true //記事投稿してもいい？いいよ！
+    slug: "{{year}}{{month}}{{day}}{{slug}}"
     files:
       - label: "Home"
         name: "home"
