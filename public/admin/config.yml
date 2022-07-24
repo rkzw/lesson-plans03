@@ -5,7 +5,7 @@ backend:
   name: github
   repo: rkzw/lesson-plans03
   branch: main
-  base_url: "https://lesson-plans03.vercel.app"
+  base_url: "https://lesson-plans.netlify.app/"
   auth_endpoint: "api/auth" # used together with base_url for our custom endpoints
 media_folder: public/img
 public_folder: img
